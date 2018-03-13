@@ -1,0 +1,45 @@
+@import "baseFolder/variables.scss";
+@import "baseFolder/base.scss";
+
+header{
+  text-align: center;
+  img{
+    width: 300px;
+  }
+  nav{
+    ul{
+      text-decoration: none;
+      li{
+        display: inline-block;
+      }
+    }
+  }
+}
+
+// .section1{
+//   display: flex;
+//   width: 100vw;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   .sectionImage{
+//     width: 50vw;
+//     img{
+//       width: 100vw;
+//     }
+//   }
+//   .sectionText{
+//     width: 50vw;
+//   }
+// }
+
+.sectionImage img{
+  width: 100vw;
+}
+
+
+
+.section1::after{
+  content: '';
+  display: table;
+  clear: both;
+}

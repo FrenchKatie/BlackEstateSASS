@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  text-align: center; }
+  header img {
+    width: 300px; }
+  header nav ul {
+    text-decoration: none; }
+    header nav ul li {
+      display: inline-block; }
+
+.sectionImage img {
+  width: 100vw; }
+
+.section1::after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/*# sourceMappingURL=style.css.map */
