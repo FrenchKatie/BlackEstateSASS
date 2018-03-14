@@ -4,42 +4,96 @@
 header{
   text-align: center;
   img{
-    width: 300px;
+    width: 150px;
+    padding: 10px;
   }
   nav{
     ul{
       text-decoration: none;
       li{
         display: inline-block;
+        padding: 10px;
       }
     }
   }
 }
 
-// .section1{
-//   display: flex;
-//   width: 100vw;
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   .sectionImage{
-//     width: 50vw;
-//     img{
-//       width: 100vw;
-//     }
-//   }
-//   .sectionText{
-//     width: 50vw;
-//   }
-// }
-
-.sectionImage img{
-  width: 100vw;
+.section1{
+   .sectionImage img{
+     width: 100%;
+   }
+   .sectionImage:last-of-type{
+       display: none;
+   }
+   .sectionText{
+     padding: 20px;
+     h2{
+       padding-bottom: 15px;
+     }
+   }
 }
 
+#block2{
+    display: none;
+}
 
+.section2{
+  padding: 20px;
+  h2, h3, h4{
+    padding-bottom: 20px;
+  }
+  p{
+    padding-bottom: 10px;
+  }
+}
 
-.section1::after{
-  content: '';
-  display: table;
-  clear: both;
+.section3{
+  padding: 20px;
+  text-align: center;
+  img{
+    height: 300px;
+  }
+  h2, h3, p, h4{
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
+
+.product4, .product5{
+  display: none;
+}
+
+@media only screen and (min-width:768px){
+  .section1{
+    #block1, #block2{
+      display: flex;
+    }
+    .sectionImage{
+      flex: 1;
+    }
+    .sectionText{
+      padding:0;
+      flex:1;
+    }
+    #block2{
+      .sectionImage{
+        order: 2
+      }
+      .sectionText{
+        order: 1;
+      }
+    }
+  }
+
+  .section3{
+    display: flex;
+    div{
+      flex: 1;
+    }
+    .product4,.product5{
+
+      display: flex;
+    }
+  }
+
 }
